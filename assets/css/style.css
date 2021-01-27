@@ -1,0 +1,38 @@
+header {
+  height: 100vh;
+  background-image: url("../images/main.jpg");
+  opacity: 0.6;
+}
+
+.header-text {
+  background-color: black;
+  color: white;
+  margin: 80px;
+  font-size: 3.5rem;
+  text-align: center;
+}
+
+nav {
+  height: 48px;
+  border-bottom: 1px solid #808080;
+}
+
+/* article {
+  width: 1200px;
+  margin: 80px auto;
+} */
+
+/* article > div {
+  max-width: 900px;
+  height: 100%;
+} */
+
+/* .title-text {
+  font-size: 2rem;
+  line-height: 2;
+} */
+
+/* .sub-text {
+  font-size: 0.875rem;
+  margin-top: 16px;
+} */
