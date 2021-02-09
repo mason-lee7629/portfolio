@@ -1,6 +1,5 @@
-let scrollSpeed = 700;
-
 function scrollPage(obj) {
+  let scrollSpeed = 700;
   if (!obj) {
     $('html, body').animate({ scrollTop: 0 }, scrollSpeed);
   } else {
@@ -10,6 +9,12 @@ function scrollPage(obj) {
 }
 
 $('.nav-circle').click(function () {
+  let direction = $(this).attr('href');
+  scrollPage(direction);
+  return false;
+});
+
+$('.nav-arrow').click(function () {
   let direction = $(this).attr('href');
   scrollPage(direction);
   return false;

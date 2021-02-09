@@ -4,10 +4,14 @@ body {
     rgb(152, 120, 102) 0%,
     rgb(54, 45, 55) 100%
   );
+  color: white;
+  overflow-x: hidden;
+  overflow-y: auto;
 }
 
-header {
-  top: 40%;
+.header-location {
+  position: fixed;
+  top: 41%;
   right: 4%;
 }
 
@@ -16,10 +20,10 @@ li {
   font-size: 0;
 }
 
-/* section {
-  height: 100vh;
-} */
-
+p {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
 .wrapper {
   position: relative;
 }
@@ -40,27 +44,85 @@ li {
   margin: 1rem 0;
   border: 1px solid #eeeeee;
   border-radius: 50%;
-  box-shadow: 0 2px 5px 0;
+}
+
+.nav-arrow-wrap {
+  display: none;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 article {
   width: 80vw;
-  /* height: 100vh; */
   margin: auto;
   padding: 5rem 0;
 }
 
+article > h1 {
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.title-area {
+  float: left;
+  width: 25%;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: right;
+}
+
+.content-area {
+  float: left;
+  width: 75%;
+  margin-top: 2rem;
+}
 .onepage {
   width: 100vw;
   height: 100vh;
 }
 
-/* .title-text {
-  font-size: 2rem;
-  line-height: 2;
-} */
+.i-down-arrow {
+  width: 2rem;
+  height: 2rem;
+}
 
-/* .sub-text {
-  font-size: 0.875rem;
-  margin-top: 16px;
-} */
+@media (max-width: 639px) {
+  html {
+    font-size: 80%;
+  }
+
+  .header-location {
+    display: none;
+  }
+
+  .nav-arrow-wrap {
+    display: block;
+  }
+
+  .title-area {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .content-area {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media (min-width: 640px) and (max-width: 767px) {
+  html {
+    font-size: 87.5%;
+  }
+
+  .header-location {
+    display: none;
+  }
+
+  .nav-arrow-wrap {
+    display: block;
+  }
+}
